@@ -1,26 +1,27 @@
-#Default node .gitignore
-# Dependency directories
-node_modules/
-jspm_packages/
-
-
-# dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
-
-# Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
-build/
-
 # Logs
 logs
 *.log
 npm-debug.log*
-pnpm-lock.yaml
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-#Add other directories
-example
-secret
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+#Other ignores
+.env
